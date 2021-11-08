@@ -46,7 +46,7 @@ mc_ip = os.environ["MC_IP"]
 
 # Setup ------------------------------------
 
-jmjversion = "1.7.0.000"  # <Grand Release>.<Major Release/Big Update>.<Big fix/Small Update>.<Commit>
+jmjversion = "1.7.0.001"  # <Grand Release>.<Major Release/Big Update>.<Big fix/Small Update>.<Commit>
 intents = discord.Intents.default()
 intents.members = True
 
