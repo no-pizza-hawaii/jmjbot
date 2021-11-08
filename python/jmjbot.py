@@ -1172,7 +1172,7 @@ async def weisheit(ctx):
     b = "~ Money Boy (fly am been) :money_with_wings:"
 
     print([f for f in os.listdir('.')])
-    with open("files/weisheiten.txt", "r", encoding="utf8") as file:
+    with open("../files/weisheiten.txt", "r", encoding="utf8") as file:
         weisheit_lst = file.readlines()
     for w in weisheit_lst:
         if w.startswith("#") or w == "\n" or (w[0] != "k" and w[0] != "m" and w[0] != "b"):
