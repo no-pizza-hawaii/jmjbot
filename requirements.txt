@@ -1,0 +1,10 @@
+discord~=1.7.3
+asyncpraw~=7.4.0
+asyncprawcore~=2.3.0
+requests~=2.26.0
+beautifulsoup4~=4.10.0
+gTTS~=2.2.3
+python-dotenv~=0.19.1
+PyNaCl~=1.4.0
+lxml~=4.6.2
+mcstatus~=6.5.0

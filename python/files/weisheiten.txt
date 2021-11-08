@@ -1,0 +1,63 @@
+# Konfuzius
+k:Lieber arm dran als arm ab!
+k:Wenn dir kalt ist, dann geh in die Ecke. Da hat es 90°.
+k:Lieber reich und gesund als arm und krank.
+k:Wenn du ein Thema anschneidest, dann musst du es auch aufessen.
+k:Wer im Glashaus sitzt, sollte im dunkeln wichsen.
+k:Lieber locker übern Hocker, als hecktisch übern Ecktisch.
+k:Lieber zwei Damen im Arm, als zwei Arme im Darm.
+k:Ich kann nicht mal Deutsch, wie soll ich das alles gesagt haben?
+k:Ich habe Angst vor dem Tag, an dem man mir Dinge in den Mund legt die ich nie gesagt habe.
+k:这不值得付出努力.
+k:喝！ 早上，中午，晚上，我要喝酒!
+k:Saufen! Morgens, mittags, abends, ich will saufen!
+k:Vertrauen ist wie Magen darm, es kommt und geht!
+k:Iss was gar ist, trink was klar ist und guck vorm kacken ob Klopapier da ist.
+k:Lieber saufen als laufen.
+k:Lieber Rotwein als tot sein.
+k:Manchmal verliert man und manchmal gewinnen die anderen.
+k:Ein Furz im Freien ist zu verzeihen, ein Furz im Zimmer ist da deutlich schlimmer.
+k:Witze über Rollstuhlfahrer sind für mich ein No-go.
+k:Warum ein Sixpack, wenn man auch ein Fass haben kann.
+k:Lieber Secondhand, als Armprothese.
+k:Eine Runde Bierpong am Morgen vertreibt Kummer und Sorgen.
+k:Tim sus!
+k:Nachts ist es kälter als draußen.
+k:Das Dorf wacht wieder auf und die Clara ist tot.
+k:Stößt du dir den kleinen Zeh, tut das verdammt doll weh.
+k:Hackfleisch kneten ist wie Tiere streicheln, nur später.
+k:Egal wie dicht du bist, Goethe war dichter.
+k:Besser ein Schnitzel am Teller, als beim Fritzl im Keller.
+k:Alles im Universum ist eine Kartoffel oder keine Kartoffel.
+k:Salzflecken auf einer Tischdecke bekommt man mit etwas Rotwein wieder heraus.
+k:Wenn du mich siehst, sag 'Mashallah! Einfach der Weise.'
+k:Lieber in der Dusche koten, als im Kot zu duschen.
+k:Bier verursacht keine Weinflecken.
+k:Selig sind die, die bei 'Ex oder Hurensohn' ihr Glas in einem Zug leeren.
+k:Zum Wandern braucht man Schuhe, zum Scheißen braucht man Ruhe.
+k:Wer mit Konfuzius schläft wird sehr weise!
+k:Wer das liest ist doof!
+k:Lieber widerlich als wieder nicht.
+k:Bist du nach dem Kotzen wieder blind, war zu stark der Gegenwind.
+k:Wenn zu viel Wurst auf dem Brot ist, ist es wurst wie viel Brot es ist.
+k:merkel mach shisha auf!
+k:merkel mach benjis keller auf!
+k:Schlimmer als ein Elefant im Porzellanladen ist ein Igel in der Kondomfabrik.
+k:Der Gott der Vegetarier heißt Kräuter-Buddha.
+k:Ohne Fleiß kein Leis!
+k:Erst, wenn eine Mücke auf deinen Hoden landet, wirst du lernen, Konflikte ohne Gewalt zu lösen.
+
+# Merkel
+m:Politiker sind nicht an Weisungen gebunden, höchstens an Überweisungen.
+m:Alle sagen merkel mach shisha auf, aber keiner sagt merkel lass zsm shisha auf.
+m:Wenn du mich siehst, sag 'Mashallah! Eine die Bundeskanzlerin.'
+
+# Money Boy
+b:Skkkkkkkkrrrrrrttttt.
+b:Mein Schwanz ist die längste Praline der Welt.
+b:Messer, Gabel, Schere, Licht, sind für kleine Kinder nichts.\nIch fick deine Lehrerin, morgen nach dem Unterricht. Yeah!
+b:Ching, Chang, Chung, ich bin nicht dumm!
+b:Ich komm in den Raum, jetzt bin ich im Raum drin.
+b:Meine Uhr kostet circa Zehntausend\nJa, das klingt viel und das ist es auch\nZumindest für dich, denn du bist ein Lauch.
+b:Steige aus dem Bett, dreh den Swag auf.
+b:Der Boy der G, sick so wie Leukämie.
