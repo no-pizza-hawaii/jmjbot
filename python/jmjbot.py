@@ -1171,6 +1171,7 @@ async def weisheit(ctx):
     m = "~ Angela Merkel <:merkel:773678321845272596>"
     b = "~ Money Boy (fly am been) :money_with_wings:"
 
+    print([f for f in os.listdir('.')])
     with open("files/weisheiten.txt", "r", encoding="utf8") as file:
         weisheit_lst = file.readlines()
     for w in weisheit_lst:
