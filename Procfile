@@ -1,1 +1,1 @@
-worker: python jmjbot/jmjbot.py
+worker: python python/jmjbot.py
