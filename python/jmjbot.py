@@ -46,7 +46,7 @@ mc_ip = os.environ["MC_IP"]
 
 # Setup ------------------------------------
 
-jmjversion = "1.7.0.001"  # <Grand Release>.<Major Release/Big Update>.<Big fix/Small Update>.<Commit>
+jmjversion = "1.7.0.002"  # <Grand Release>.<Major Release/Big Update>.<Big fix/Small Update>.<Commit>
 intents = discord.Intents.default()
 intents.members = True
 
@@ -540,7 +540,11 @@ async def hygiene(ctx):
 
 @bot.command(aliases=["löschdich", "loeschdich"])
 async def lenny(ctx):
-    await ctx.send(file=discord.File("files/lenny_deepfry.jpg"))
+    if local:
+        path = "files/lenny_deepfry.jpg"
+    else:
+        path = "python/files/lenny_deepfry.jpg"
+    await ctx.send(file=discord.File(path))
 
 
 @bot.command(aliases=["lösch"])
@@ -1004,11 +1008,15 @@ async def sprich(ctx, channel_name: str = None, *, text: str = None):
 
     # Play TTS
     tts = gTTS(text=text, lang="de")
-    tts.save("audio/text.mp3")
+    if local:
+        path = "audio/"
+    else:
+        path = "python/audio/"
+    tts.save(os.path.join(path, "text.mp3"))
 
     try:
         # Lets play that mp3 file in the voice channel
-        voiceclient.play(discord.FFmpegPCMAudio('audio/text.mp3'), after=lambda l: print(f"Finished playing: {text}"))
+        voiceclient.play(discord.FFmpegPCMAudio(os.path.join(path, "text.mp3")), after=lambda l: print(f"Finished playing: {text}"))
 
         # Lets set the volume to 1
         voiceclient.source = discord.PCMVolumeTransformer(voiceclient.source)
@@ -1067,34 +1075,38 @@ async def sound(ctx, channel_name: str = None, *, text: str = None):
         await ctx.send("Ist mir zu kurz.")
         return
     try:
+        if local:
+            path = "audio/"
+        else:
+            path = "python/audio/"
         if text in "ichhabgarnichtsgemacht":
-            file = discord.FFmpegPCMAudio('audio/garnichts.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'garnichts.mp3'))
         elif text in "adler":
-            file = discord.FFmpegPCMAudio('audio/adler.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'adler.mp3'))
         elif text in "mutterinarschgefickt":
-            file = discord.FFmpegPCMAudio('audio/mutter.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'mutter.mp3'))
         elif text in "wasbruderwassollichsagenbruder":
-            file = discord.FFmpegPCMAudio('audio/bruder.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'bruder.mp3'))
         elif text in 'hundesohn':
-            file = discord.FFmpegPCMAudio('audio/hundesohn.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'hundesohn.mp3'))
         elif text in 'nichtweinengirl':
-            file = discord.FFmpegPCMAudio('audio/girl.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'girl.mp3'))
         elif text in 'merkelmachshishaauf':
-            file = discord.FFmpegPCMAudio('audio/shisha.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'shisha.mp3'))
         elif text in 'michiesistnichtskaputt':
-            file = discord.FFmpegPCMAudio('audio/michii.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'michii.mp3'))
         elif text in 'undeinpaargeilefotzensindauchdabei':
-            file = discord.FFmpegPCMAudio('audio/dabei.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'dabei.mp3'))
         elif text in 'schwanzinmeinarsch':
-            file = discord.FFmpegPCMAudio('audio/arsch.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'arsch.mp3'))
         elif text in 'meinechickennuggetsverbrennen':
-            file = discord.FFmpegPCMAudio('audio/nuggets.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'nuggets.mp3'))
         elif text in 'kapitänzurseepatentabcunddie6':
-            file = discord.FFmpegPCMAudio('audio/see.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'see.mp3'))
         elif text in 'montefurzmontefartmontepups':
-            file = discord.FFmpegPCMAudio('audio/montefart.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'montefart.mp3'))
         elif text in 'minecraftvillagerhmmmmmm':
-            file = discord.FFmpegPCMAudio('audio/villager.mp3')
+            file = discord.FFmpegPCMAudio(os.path.join(path, 'villager.mp3'))
         else:
             await ctx.send("Find ich nicht, mag ich nicht.")
             return
@@ -1172,7 +1184,11 @@ async def weisheit(ctx):
     b = "~ Money Boy (fly am been) :money_with_wings:"
 
     print([f for f in os.listdir('.')])
-    with open("../files/weisheiten.txt", "r", encoding="utf8") as file:
+    if local:
+        path = "files/weisheiten.txt"
+    else:
+        path = "python/files/weisheiten.txt"
+    with open(path, "r", encoding="utf8") as file:
         weisheit_lst = file.readlines()
     for w in weisheit_lst:
         if w.startswith("#") or w == "\n" or (w[0] != "k" and w[0] != "m" and w[0] != "b"):
@@ -1204,7 +1220,11 @@ async def minecraft(ctx, mode: str = "", *, arg: str = None):
     async with ctx.channel.typing():
         mcserver = MinecraftServer.lookup(mc_ip)
         motd = " +--+ Mixi Miners Remastered \u26CF +--+"
-        icon = discord.File("files/server-icon.png", filename="server-icon.png")  # Local file as attachment
+        if local:
+            path = "files/server-icon.png"
+        else:
+            path = "python/files/server-icon.png"
+        icon = discord.File(path, filename="server-icon.png")  # Local file as attachment
         embed = discord.Embed(description=motd,
                               colour=discord.Colour.dark_green())
         embed.set_author(name="Mixi Miners", icon_url="attachment://server-icon.png")
